@@ -1,0 +1,222 @@
+@widthAll: 1200px;
+@colorBack: #ccc;
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.container {
+    max-width: @widthAll;
+    min-width: 600px;
+    margin: 0 auto;
+    min-height: 100%;
+}
+
+.logo {
+    position: relative;
+    margin-top: 50px;
+    margin-left: 100px;
+    float: left;
+}
+
+img[alt="sport"] {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    box-shadow: 0px 2px 4.85px 0.15px rgba(33, 33, 33, 0.35);
+}
+
+.header {
+    min-height: 200px;
+    background-color: @colorBack - #333;
+}
+
+.nav {
+    width: 200px;
+    height: 300px;
+    background-color: gainsboro;
+    float: left;
+}
+
+.main {
+    margin-left: 200px;
+    .block {
+        outline: 1px solid black;
+        width: @widthAll / 3 - 60px;
+        height: 100px;
+        margin: 50px 30px;
+        float: left;
+        background-color: aliceblue;
+        text-align: center;
+    }
+}
+
+.product_img:hover {
+    outline-style: none;
+}
+
+.product_img {
+    outline: 4px solid green;
+}
+
+.menu li {
+    width: 20%;
+    height: 100px;
+    list-style-type: none;
+    display: inline-block;
+    font-weight: bolder;
+    background-color: aliceblue;
+    position: relative;
+    margin: 5% 1.5%;
+    border-radius: 50px;
+    box-shadow: 0px 2px 4.85px 0.15px rgba(33, 33, 33, 0.35);
+}
+
+.menu a {
+    width: 100%;
+    display: block;
+    height: 100px;
+    text-decoration-line: none;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.menu li a:hover {
+    color: green;
+}
+
+.catalog {
+    width: 500px;
+    height: 200px;
+}
+
+.catalog div {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.bicycle {
+    height: 500px;
+}
+
+.img_bicycle {
+    float: left;
+}
+
+.caption {
+    color: black;
+    font: 18px;
+    font-weight: 400;
+    background-color: #eaeaea;
+    text-align: center;
+}
+
+.mini_description {
+    color: #707070;
+    font: 14px;
+    font-style: italic;
+    line-height: 16px;
+    text-align: center;
+}
+
+.max_description {
+    color: #484343;
+    font: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+.mini_description:first-letter {
+    font-size: 30px;
+    color: darkgreen;
+}
+
+.max_description:first-letter {
+    font-size: 30px;
+    color: darkgreen;
+}
+
+.list_scooter {
+    color: #898989;
+    font: 15px;
+    font-weight: 500;
+    list-style-type: none;
+    text-align: left;
+    list-style-image: url(img/miniscooter.jpg);
+    margin-left: 20px;
+}
+
+body {
+    height: 900px;
+    background-color: #f8f8f8;
+}
+
+input[type="text"] {
+    width: 400px;
+    height: 24px;
+    font-style: italic;
+    font-size: 14px;
+    color: green;
+    text-transform: capitalize;
+}
+
+input[class="message"] {
+    width: 600px;
+    height: 40px;
+}
+
+input[type="email"]:focus {
+    color: blueviolet;
+    background-color: #ccc;
+}
+
+input[type="submit"]:hover {
+    color: darkgreen;
+    font-weight: bolder;
+}
+
+.description {
+    border: 1px solid #000;
+    width: 400px;
+    height: 300px;
+    border-collapse: collapse;
+}
+
+.description td {
+    border: 1px solid #000;
+    padding-left: 10px;
+    vertical-align: middle;
+    text-align: center;
+    background-color: darkseagreen;
+}
+
+.clr {
+    height: 200px;
+    clear: both;
+}
+
+.footer {
+    height: 200px;
+    background-color: @colorBack - #777;
+    width: @widthAll;
+    margin: -200px auto;
+}
+
+@media screen and (min-width: @widthAll) {
+    .header {
+        background-color: #ddd;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .menu li {
+        width: 30%;
+        margin: 7% 2.5%;
+    }
+}
